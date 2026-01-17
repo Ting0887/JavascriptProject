@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Java 程式語言測驗</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../style.css" />
+        <h1 class="quiz_title">測驗結果</h1>
+    </head>
+    <body background="../background.jpg">
+        <div class="quiz_result">
+            <div class="rst" id="rst"></div>
+            <br>
+            <span class="home">
+                <button id="home" onclick="window.location.href='../index.html'">回首頁</button>
+            </span>
+            <span class="show_err_ans">
+                <button id="err_ans" onclick="click_error_ans();">回答錯誤的題目</button>
+                <br>
+                    <span id="err_ans_lst"></span>
+            </span>
+        </div>
+        <script>
+            let score = localStorage.getItem("Java_score");
+            document.getElementById("rst").innerHTML = "您在Java程式語言測驗中得到" + score + "/100";
+            function click_error_ans(){
+                let error = localStorage.getItem("Wrong_ans");
+                document.getElementById("err_ans_lst").innerHTML = error;
+            }
+        </script>
+    </body>
+</html>

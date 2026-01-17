@@ -1,0 +1,64 @@
+<html>
+<head>
+   <title>Add drill</title>
+   <script src="check_ans.js"></script>
+   <script src="generate_que.js"></script>
+   <script src="show_error.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <h1>ADD Drill</h1> 
+    <hr> 
+    <div class="q">
+        <p id='no1'>第1題:</p>
+        <span id='q1'>
+            <font>15+10=</font>
+        </span>
+            <input type='number' size=2 id=reply_1>
+            <button onclick='checkAnswer("+", "q1", "reply_1", "fb_1");'>Check answer</button>
+            <button onclick='nextq("q1","+");'>Next question</button>
+        <br>
+        <hr>
+        <p id='fb_1'></p>
+    </div>
+    <div class="q">
+        <p id='no2'>第2題:</p>
+        <span id='q2'>
+            <font>25-16=</font>
+        </span>
+        <input type='number' size=2 id=reply_2>
+        <button onclick='checkAnswer("-", "q2", "reply_2", "fb_2");'>Check answer</button>
+        <button onclick='nextq("q2","-");'>Next question</button>
+        <br><hr>
+        <p id='fb_2'></p>
+    </div>
+
+    <div class="q">
+        <p id='no3'>第3題:</p>
+        <span id='q3'>
+            <font>25x17=</font>
+        </span>
+        <input type='number' size=2 id=reply_3>
+        <button onclick='checkAnswer("x", "q3", "reply_3", "fb_3");'>Check answer</button>
+        <button onclick='nextq("q3","x");'>Next question</button>
+        <br><hr>
+        <p id='fb_3'></p>
+    </div>
+
+    <div class="q">
+        <p id='no4'>第4題:</p>
+        <span id='q4'>
+            <font>70÷10=</font>
+        </span>
+        <input type='number' size=2 id=reply_4>
+        <button onclick='checkAnswer("÷", "q4", "reply_4", "fb_4");'>Check answer</button>
+        <button onclick='nextq("q4","÷");' >Next question</button>
+        <br><hr>
+        <p id='fb_4'></p>
+        <hr>
+    </div>
+    
+    <div class="show">
+        <button onclick='showerror();'>Show wrong questions</button><br>
+        <p id='wrongarea'></p>
+    </div>
+    </body>
+</html>

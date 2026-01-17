@@ -1,0 +1,141 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed
+}
+
+h1.quiz_items{
+    text-align: center;
+    color: whitesmoke;
+}
+
+h1.quiz_title{
+    text-align: center;
+    color: aqua;
+    margin-top: 225px;
+}
+
+table{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 250px;
+}
+
+th,td{
+    font-size: 20px;
+}
+
+th{
+    color: rgb(80, 109, 255);
+}
+
+td{
+    color: aqua;
+}
+
+img{
+    width: 270px;
+    height: 150px;
+}
+
+.container{
+    text-align: left;
+    margin-left: 40%;
+}
+
+.quiz_result{
+    text-align: center;
+}
+
+.question{
+    margin-top: 250px;
+}
+
+.btn{
+    margin-top: 15px;
+}
+
+.rst{
+    text-align: center;
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 22px;
+}
+
+.qst_num, .qst{
+    font-weight: bold;
+    color: rgb(0, 139, 95);
+    font-size: 20px;
+}
+
+.home button{
+    text-align: center;
+}
+.show_err_ans button{
+    text-align: center;
+}
+
+.options{
+    display: inline-block;
+    color: whitesmoke;
+}
+
+.option{
+    margin-top: 5px;
+}
+
+.option-item{
+    margin-bottom: 10px;
+}
+
+input[type='radio'] {
+    accent-color: #232323;
+}
+
+button{
+    width: 70px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+button#err_ans{
+    width: 100px;
+    height: 60px;
+}
+
+#err_ans_lst{
+    margin-top: 5%;
+}
+
+#err_ans_lst li{
+    text-align: left;
+    margin-left: 45%;
+    list-style:none;
+}
+
+.qst_no{
+    color: dodgerblue;
+}
+
+.corr_ans{
+    color: #FF3383;
+}
+
+a:link {
+    color: rgb(47, 0, 128);
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(255, 192, 241);
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(0, 251, 255);
+    background-color: transparent;
+    text-decoration: underline;
+}

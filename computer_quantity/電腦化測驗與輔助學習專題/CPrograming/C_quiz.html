@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Python 程式語言測驗</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../style.css" />
+        <script src="C_qst.js"></script>
+        <script src="C_quiz.js"></script>
+    </head>
+    <body onload="next_qst()" background="../background.jpg">
+        <div class="container">
+            <div class="question">
+                <span class="qst_num" id="qst_num"></span>
+                <span class="qst" id="qst"></span>
+            </div>
+            <div class="options">
+                <div class="option">
+                    <input type="radio" name="option" value=0 id="c1" checked>
+                    <label for="c1" id="s0"> ?</label>&nbsp;
+                </div>
+                <div class="option">
+                    <input type=radio name="option" value=1 id="c2">
+                    <label for="c2" id="s1"> ?</label>&nbsp;
+                </div>
+               <div class="option">
+                    <input type=radio name="option" value=2 id="c3">
+                    <label for="c3" id="s2"> ?</label>&nbsp;
+               </div>
+               <div class="option">
+                    <input type=radio name="option" value=3 id="c4">
+                    <label for="c4" id="s3"> ?</label>
+               </div>
+                <br>
+            </div>
+            <div class="btn">
+                <button onclick="check_ans(); next_qst();" id="next_qst">下一題</button>
+            </div>
+        </div>
+    </body>
+</html>
